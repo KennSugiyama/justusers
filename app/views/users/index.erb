@@ -1,0 +1,7 @@
+<h1> All the users</h1>
+
+<% @users.each do |user| %>
+  <div>
+    <h3> <%= user.name %> is <%= user.age %> years old. </h3>
+  </div>
+<% end %>

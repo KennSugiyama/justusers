@@ -1,0 +1,9 @@
+<form action="/users/<%= @user.id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+  <div>
+  <input type="text" name="user[name]" placeholder="Name" value="<%= @user.name %>">
+    <div>
+  <input type="text" name="user[age]" placeholder="Age" value="<%= @user.age %>">
+    <div>
+  <input type="submit" name="Make Changes">
+</form>

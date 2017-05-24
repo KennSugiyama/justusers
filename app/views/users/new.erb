@@ -1,0 +1,14 @@
+<form action="/users" method="POST">
+  <div>
+  <input type="text" name="user[name]" placeholder="Name"></div>
+  <div>
+  <input type="text" name="user[age]" placeholder="Age"></div>
+  <div>
+  <input type="submit" name="Create"></div>
+  <div>
+  <h3>Skills</h3>
+    <% @skills.each do |skill| %>
+      <input type="checkbox" name="skill[]" value="<%= skill.id %>"><%= skill.name %><br>
+    <% end %>
+  </div>
+</form>
